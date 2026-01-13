@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #01161e, #124559, #598392,  #264653);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+
+
+.profile{
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 20rem;
+  margin: 50px auto 50px;
+  border-radius: 50%;
+  /* background-color: #598392; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar img {
+  border-radius: 20%;
+}
+
+
+.avatar .profile-img {
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+}
+.profile h1 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.profile p {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.link-btn {
+  text-decoration: none;
+  padding: 14px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.link-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Platform accents */
+.whatsapp { border-left: 4px solid #25D366; }
+.facebook { border-left: 4px solid #1877F2; }
+.instagram { border-left: 4px solid #E4405F; }
+.tiktok { border-left: 4px solid #000000; }
+.linkedin { border-left: 4px solid #0A66C2; }
+.threads { border-left: 4px solid #ffffff; }
+
+footer {
+  text-align: center;
+  margin-top: 28px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    padding: 16px;
+  }
+}
